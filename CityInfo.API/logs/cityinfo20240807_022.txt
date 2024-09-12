@@ -1,0 +1,1209 @@
+2024-08-07 18:10:38.294 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:10:38.414 +05:30 [DBG] Hosting starting
+2024-08-07 18:10:38.505 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:10:38.534 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:10:38.536 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:10:38.537 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:10:38.538 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:10:38.539 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:10:38.540 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:10:38.542 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:10:38.543 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:10:38.545 +05:30 [DBG] Hosting started
+2024-08-07 18:10:38.608 +05:30 [DBG] Connection id "0HN5MROI361RA" accepted.
+2024-08-07 18:10:38.610 +05:30 [DBG] Connection id "0HN5MROI361RA" started.
+2024-08-07 18:10:38.644 +05:30 [DBG] Connection id "0HN5MROI361RA" received FIN.
+2024-08-07 18:10:38.645 +05:30 [DBG] Connection id "0HN5MROI361RB" accepted.
+2024-08-07 18:10:38.647 +05:30 [DBG] Connection id "0HN5MROI361RB" started.
+2024-08-07 18:10:38.655 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:10:38.666 +05:30 [DBG] Connection 0HN5MROI361RB established using the following protocol: "Tls12"
+2024-08-07 18:10:38.676 +05:30 [DBG] Connection id "0HN5MROI361RA" stopped.
+2024-08-07 18:10:38.680 +05:30 [DBG] Connection id "0HN5MROI361RA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:10:38.732 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:10:38.861 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:10:39.000 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:10:39.004 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:10:39.029 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:10:39.031 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:10:39.035 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 305.6298ms
+2024-08-07 18:10:39.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:10:39.063 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:10:39.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 11.6777ms
+2024-08-07 18:10:39.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.0532ms
+2024-08-07 18:10:39.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:10:39.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - null null
+2024-08-07 18:10:39.297 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-07 18:10:39.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - 200 628 image/png 20.0795ms
+2024-08-07 18:10:39.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.5583ms
+2024-08-07 18:12:49.105 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:12:49.664 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:12:50.191 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:13:06.340 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:13:06.911 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:13:06.931 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:13:06.940 +05:30 [DBG] Created DbConnection. (7ms).
+2024-08-07 18:13:06.944 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:06.946 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:13:06.948 +05:30 [DBG] Created DbConnection. (1ms).
+2024-08-07 18:13:06.950 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:06.959 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:06.962 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:06.966 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:13:06.974 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:13:06.978 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2024-08-07 18:13:06.979 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2024-08-07 18:13:06.979 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:06.982 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:06.988 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:13:07.006 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:13:07.008 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.009 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2024-08-07 18:13:07.010 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:13:07.010 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:13:07.010 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.011 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.011 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.011 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:13:07.011 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:13:07.011 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:13:07.011 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:13:07.011 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.012 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.012 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:13:07.012 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:13:07.012 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.012 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:13:07.028 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.028 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.028 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:13:07.028 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:13:07.028 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:13:07.028 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:13:07.029 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:13:07.031 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.032 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2024-08-07 18:13:07.032 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.032 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:13:07.042 +05:30 [INF] Applying migration '20240807115343_InitialDataSeed'.
+2024-08-07 18:13:07.077 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.077 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.427 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:13:07.432 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:13:07.435 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:13:07.435 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:13:07.436 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:13:07.436 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (1, 'The one with that big park', 'New York City');
+SELECT changes();
+
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (2, 'The one with cathedral that was never really finisshed', 'Antwerp');
+SELECT changes();
+
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (3, 'The one with that big tower.', 'Paris');
+SELECT changes();
+2024-08-07 18:13:07.437 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (1, 'The one with that big park', 'New York City');
+SELECT changes();
+
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (2, 'The one with cathedral that was never really finisshed', 'Antwerp');
+SELECT changes();
+
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (3, 'The one with that big tower.', 'Paris');
+SELECT changes();
+2024-08-07 18:13:07.438 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:13:07.438 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:13:07.438 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:13:07.438 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (1, 0, 'The one with that big park', 'New York City');
+SELECT changes();
+
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (2, 0, 'The one with cathedral that was never really finisshed', 'Antwerp');
+SELECT changes();
+
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (3, 0, 'The one with that big tower.', 'Paris');
+SELECT changes();
+2024-08-07 18:13:07.443 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (1, 0, 'The one with that big park', 'New York City');
+SELECT changes();
+
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (2, 0, 'The one with cathedral that was never really finisshed', 'Antwerp');
+SELECT changes();
+
+INSERT INTO "PointsOfInterest" ("Id", "CityId", "Description", "Name")
+VALUES (3, 0, 'The one with that big tower.', 'Paris');
+SELECT changes();
+2024-08-07 18:13:07.444 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:13:07.445 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:13:07.445 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:13:07.448 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:13:07.449 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:13:07.449 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:14:25.385 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:14:25.544 +05:30 [DBG] Hosting starting
+2024-08-07 18:14:25.735 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:14:25.819 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:14:25.820 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:14:25.821 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:14:25.822 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:14:25.823 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:14:25.825 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:14:25.826 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:14:25.827 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:14:25.829 +05:30 [DBG] Hosting started
+2024-08-07 18:14:25.835 +05:30 [DBG] Connection id "0HN5MRQLQ603K" accepted.
+2024-08-07 18:14:25.837 +05:30 [DBG] Connection id "0HN5MRQLQ603K" started.
+2024-08-07 18:14:25.875 +05:30 [DBG] Connection id "0HN5MRQLQ603K" received FIN.
+2024-08-07 18:14:25.885 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:14:25.943 +05:30 [DBG] Connection id "0HN5MRQLQ603K" stopped.
+2024-08-07 18:14:25.953 +05:30 [DBG] Connection id "0HN5MRQLQ603K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:14:26.359 +05:30 [DBG] Connection id "0HN5MRQLQ603L" accepted.
+2024-08-07 18:14:26.379 +05:30 [DBG] Connection id "0HN5MRQLQ603L" started.
+2024-08-07 18:14:26.497 +05:30 [DBG] Connection id "0HN5MRQLQ603L" received FIN.
+2024-08-07 18:14:26.502 +05:30 [DBG] Connection id "0HN5MRQLQ603M" accepted.
+2024-08-07 18:14:26.511 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:14:26.515 +05:30 [DBG] Connection id "0HN5MRQLQ603M" started.
+2024-08-07 18:14:26.526 +05:30 [DBG] Connection id "0HN5MRQLQ603L" stopped.
+2024-08-07 18:14:26.528 +05:30 [DBG] Connection id "0HN5MRQLQ603L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:14:26.531 +05:30 [DBG] Connection id "0HN5MRQLQ603M" received FIN.
+2024-08-07 18:14:26.532 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:14:26.532 +05:30 [DBG] Connection id "0HN5MRQLQ603N" accepted.
+2024-08-07 18:14:26.540 +05:30 [DBG] Connection id "0HN5MRQLQ603M" stopped.
+2024-08-07 18:14:26.541 +05:30 [DBG] Connection id "0HN5MRQLQ603N" started.
+2024-08-07 18:14:26.543 +05:30 [DBG] Connection id "0HN5MRQLQ603M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:14:26.570 +05:30 [DBG] Connection 0HN5MRQLQ603N established using the following protocol: "Tls12"
+2024-08-07 18:14:26.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:14:26.842 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:14:26.880 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 196.7436ms
+2024-08-07 18:14:26.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:14:26.976 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:14:26.978 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:14:27.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:14:27.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:14:27.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:14:27.030 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:14:27.034 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:14:27.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 147.4126ms
+2024-08-07 18:14:27.046 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:14:27.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 18.6907ms
+2024-08-07 18:14:27.101 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:14:27.101 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:14:27.119 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 101.3591ms
+2024-08-07 18:14:27.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 105.683ms
+2024-08-07 18:14:27.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:14:27.150 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:14:27.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 134.5789ms
+2024-08-07 18:14:27.211 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.1509ms
+2024-08-07 18:14:27.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:14:27.686 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.3482ms
+2024-08-07 18:15:39.039 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:15:39.595 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:15:40.111 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:16:05.323 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:16:05.881 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:16:05.898 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:16:05.909 +05:30 [DBG] Created DbConnection. (6ms).
+2024-08-07 18:16:05.913 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.914 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:16:05.916 +05:30 [DBG] Created DbConnection. (1ms).
+2024-08-07 18:16:05.918 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.925 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.929 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.932 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:16:05.939 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:16:05.944 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2024-08-07 18:16:05.945 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2024-08-07 18:16:05.945 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.947 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.954 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:16:05.973 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:16:05.975 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.977 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2024-08-07 18:16:05.978 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:16:05.978 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:16:05.978 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.978 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.978 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.979 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:16:05.979 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:16:05.979 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:16:05.979 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:16:05.979 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.979 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.979 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:16:05.979 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:16:05.979 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.979 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:16:05.996 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:05.996 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:05.996 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:16:05.996 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:16:05.996 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:16:05.996 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:16:05.997 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:16:05.999 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:06.000 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2024-08-07 18:16:06.000 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:06.000 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:16:06.008 +05:30 [INF] Applying migration '20240807124540_InitialDataSeed'.
+2024-08-07 18:16:06.030 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:06.030 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:06.032 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:16:06.034 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:16:06.035 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:16:06.035 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:16:06.035 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:16:06.035 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807124540_InitialDataSeed', '8.0.7');
+2024-08-07 18:16:06.711 +05:30 [INF] Executed DbCommand (674ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807124540_InitialDataSeed', '8.0.7');
+2024-08-07 18:16:06.714 +05:30 [DBG] Committing transaction.
+2024-08-07 18:16:06.751 +05:30 [DBG] Committed transaction.
+2024-08-07 18:16:06.753 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:16:06.753 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:16:06.754 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:16:06.756 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:16:06.757 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:16:06.757 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:17:42.887 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:17:43.455 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:17:43.472 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:17:43.482 +05:30 [DBG] Created DbConnection. (5ms).
+2024-08-07 18:17:43.487 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.489 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:17:43.491 +05:30 [DBG] Created DbConnection. (1ms).
+2024-08-07 18:17:43.493 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.501 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.504 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.507 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:17:43.514 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:17:43.519 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2024-08-07 18:17:43.520 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (9ms).
+2024-08-07 18:17:43.520 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.522 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.527 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:17:43.545 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:17:43.547 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.548 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2024-08-07 18:17:43.549 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:17:43.549 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:17:43.549 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.550 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.550 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.550 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:17:43.550 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:17:43.550 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:17:43.550 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:17:43.550 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.550 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.551 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:17:43.551 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:17:43.551 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.551 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:17:43.565 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.565 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.565 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:17:43.565 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:17:43.565 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:17:43.566 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:17:43.566 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:17:43.568 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.569 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2024-08-07 18:17:43.569 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:17:43.569 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:17:43.578 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-08-07 18:17:43.580 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:17:43.580 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:17:43.580 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:19:14.986 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:19:15.150 +05:30 [DBG] Hosting starting
+2024-08-07 18:19:15.310 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:19:15.365 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:19:15.368 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:19:15.369 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:19:15.370 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:19:15.371 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:19:15.373 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:19:15.374 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:19:15.374 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:19:15.375 +05:30 [DBG] Hosting started
+2024-08-07 18:19:15.636 +05:30 [DBG] Connection id "0HN5MRTC5U5K4" accepted.
+2024-08-07 18:19:15.639 +05:30 [DBG] Connection id "0HN5MRTC5U5K4" started.
+2024-08-07 18:19:15.644 +05:30 [DBG] Connection id "0HN5MRTC5U5K5" accepted.
+2024-08-07 18:19:15.645 +05:30 [DBG] Connection id "0HN5MRTC5U5K5" started.
+2024-08-07 18:19:15.676 +05:30 [DBG] Connection id "0HN5MRTC5U5K5" received FIN.
+2024-08-07 18:19:15.676 +05:30 [DBG] Connection id "0HN5MRTC5U5K4" received FIN.
+2024-08-07 18:19:15.687 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:19:15.687 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:19:15.760 +05:30 [DBG] Connection id "0HN5MRTC5U5K4" stopped.
+2024-08-07 18:19:15.760 +05:30 [DBG] Connection id "0HN5MRTC5U5K5" stopped.
+2024-08-07 18:19:15.772 +05:30 [DBG] Connection id "0HN5MRTC5U5K4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:19:15.783 +05:30 [DBG] Connection id "0HN5MRTC5U5K5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:19:15.989 +05:30 [DBG] Connection id "0HN5MRTC5U5K6" accepted.
+2024-08-07 18:19:15.999 +05:30 [DBG] Connection id "0HN5MRTC5U5K6" started.
+2024-08-07 18:19:16.044 +05:30 [DBG] Connection id "0HN5MRTC5U5K6" received FIN.
+2024-08-07 18:19:16.046 +05:30 [DBG] Connection id "0HN5MRTC5U5K7" accepted.
+2024-08-07 18:19:16.048 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:19:16.052 +05:30 [DBG] Connection id "0HN5MRTC5U5K7" started.
+2024-08-07 18:19:16.059 +05:30 [DBG] Connection id "0HN5MRTC5U5K6" stopped.
+2024-08-07 18:19:16.061 +05:30 [DBG] Connection id "0HN5MRTC5U5K6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:19:16.084 +05:30 [DBG] Connection 0HN5MRTC5U5K7 established using the following protocol: "Tls12"
+2024-08-07 18:19:16.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:19:16.327 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:19:16.358 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 147.8525ms
+2024-08-07 18:19:16.367 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:19:16.465 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:19:16.467 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:19:16.497 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:19:16.499 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:19:16.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 138.8103ms
+2024-08-07 18:19:16.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:19:16.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:19:16.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:19:16.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:19:16.572 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:19:16.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 68.2374ms
+2024-08-07 18:19:16.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 89.4781ms
+2024-08-07 18:19:16.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:19:16.610 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:19:16.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 116.5924ms
+2024-08-07 18:19:16.663 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:19:16.665 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 155.0694ms
+2024-08-07 18:19:16.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.2584ms
+2024-08-07 18:19:16.937 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:19:17.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.4854ms
+2024-08-07 18:30:11.002 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:30:11.639 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:30:12.224 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:30:24.919 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:30:25.513 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:30:25.533 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:30:25.545 +05:30 [DBG] Created DbConnection. (8ms).
+2024-08-07 18:30:25.548 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.551 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:30:25.554 +05:30 [DBG] Created DbConnection. (2ms).
+2024-08-07 18:30:25.556 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.564 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.568 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.572 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:30:25.577 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:30:25.582 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2024-08-07 18:30:25.583 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2024-08-07 18:30:25.584 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.587 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.593 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:30:25.610 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:30:25.612 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.614 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2024-08-07 18:30:25.615 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:30:25.615 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:30:25.616 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.616 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.616 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.616 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:30:25.617 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:30:25.617 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:30:25.617 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:30:25.617 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.617 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.617 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:30:25.617 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:30:25.617 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.618 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:30:25.633 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.633 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.633 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:30:25.633 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:30:25.633 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:30:25.633 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:30:25.634 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:30:25.636 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.637 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2024-08-07 18:30:25.637 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.637 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:30:25.647 +05:30 [INF] Applying migration '20240807130012_InitialDataSeed'.
+2024-08-07 18:30:25.670 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:25.670 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:25.672 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:30:25.675 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:30:25.677 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:30:25.677 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:30:26.047 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (370ms).
+2024-08-07 18:30:26.048 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807130012_InitialDataSeed', '8.0.7');
+2024-08-07 18:30:26.049 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807130012_InitialDataSeed', '8.0.7');
+2024-08-07 18:30:26.050 +05:30 [DBG] Committing transaction.
+2024-08-07 18:30:26.087 +05:30 [DBG] Committed transaction.
+2024-08-07 18:30:26.088 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:30:26.088 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:30:26.088 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:30:26.089 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:30:26.090 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:30:26.090 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:40:27.695 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:40:27.956 +05:30 [DBG] Hosting starting
+2024-08-07 18:40:28.720 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:40:28.840 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:40:28.841 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:40:28.842 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:40:28.843 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:40:28.844 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:40:28.845 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:40:28.846 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:40:28.848 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:40:28.849 +05:30 [DBG] Hosting started
+2024-08-07 18:40:28.961 +05:30 [DBG] Connection id "0HN5MS97LACNK" accepted.
+2024-08-07 18:40:28.964 +05:30 [DBG] Connection id "0HN5MS97LACNK" started.
+2024-08-07 18:40:28.986 +05:30 [DBG] Connection id "0HN5MS97LACNK" received FIN.
+2024-08-07 18:40:28.994 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:40:29.202 +05:30 [DBG] Connection id "0HN5MS97LACNK" stopped.
+2024-08-07 18:40:29.207 +05:30 [DBG] Connection id "0HN5MS97LACNK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:40:29.369 +05:30 [DBG] Connection id "0HN5MS97LACNL" accepted.
+2024-08-07 18:40:29.373 +05:30 [DBG] Connection id "0HN5MS97LACNL" started.
+2024-08-07 18:40:29.430 +05:30 [DBG] Connection id "0HN5MS97LACNL" received FIN.
+2024-08-07 18:40:29.439 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:40:29.432 +05:30 [DBG] Connection id "0HN5MS97LACNM" accepted.
+2024-08-07 18:40:29.473 +05:30 [DBG] Connection id "0HN5MS97LACNL" stopped.
+2024-08-07 18:40:29.475 +05:30 [DBG] Connection id "0HN5MS97LACNM" started.
+2024-08-07 18:40:29.477 +05:30 [DBG] Connection id "0HN5MS97LACNL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:40:29.490 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:40:29.491 +05:30 [DBG] Connection id "0HN5MS97LACNM" received FIN.
+2024-08-07 18:40:29.491 +05:30 [DBG] Connection id "0HN5MS97LACNN" accepted.
+2024-08-07 18:40:29.498 +05:30 [DBG] Connection id "0HN5MS97LACNM" stopped.
+2024-08-07 18:40:29.503 +05:30 [DBG] Connection id "0HN5MS97LACNN" started.
+2024-08-07 18:40:29.505 +05:30 [DBG] Connection id "0HN5MS97LACNM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:40:29.533 +05:30 [DBG] Connection 0HN5MS97LACNN established using the following protocol: "Tls12"
+2024-08-07 18:40:29.728 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:40:29.967 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:40:29.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 268.2463ms
+2024-08-07 18:40:30.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:40:30.115 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:40:30.119 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:40:30.146 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:40:30.149 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:40:30.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 148.7045ms
+2024-08-07 18:40:30.156 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:40:30.156 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:40:30.156 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:40:30.157 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:40:30.187 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:40:30.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 42.5835ms
+2024-08-07 18:40:30.239 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:40:30.248 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:40:30.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 96.9232ms
+2024-08-07 18:40:30.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 95.7697ms
+2024-08-07 18:40:30.325 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:40:30.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 171.1119ms
+2024-08-07 18:40:30.362 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 175.1196ms
+2024-08-07 18:40:30.621 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:40:30.872 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 250.4084ms
+2024-08-07 18:40:50.877 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:40:51.513 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:40:52.249 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:41:03.500 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:41:04.195 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:41:04.216 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:41:04.227 +05:30 [DBG] Created DbConnection. (9ms).
+2024-08-07 18:41:04.232 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.236 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:41:04.239 +05:30 [DBG] Created DbConnection. (3ms).
+2024-08-07 18:41:04.242 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.254 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.258 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.262 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:41:04.270 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:41:04.275 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2024-08-07 18:41:04.276 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2024-08-07 18:41:04.276 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.278 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.286 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:41:04.315 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:41:04.318 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.320 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (2ms).
+2024-08-07 18:41:04.321 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:41:04.322 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:41:04.322 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.322 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.322 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.323 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:41:04.323 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:41:04.323 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:41:04.323 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:41:04.323 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.323 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.323 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:41:04.323 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:41:04.323 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.323 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:41:04.341 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.341 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.341 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:41:04.341 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:41:04.342 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:41:04.342 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:41:04.343 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:41:04.347 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.349 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 4ms reading results.
+2024-08-07 18:41:04.349 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.349 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:41:04.417 +05:30 [INF] Applying migration '20240807131052_InitialDataSeed'.
+2024-08-07 18:41:04.450 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.450 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.453 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:41:04.456 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:41:04.458 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:41:04.458 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:41:04.458 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:41:04.459 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807131052_InitialDataSeed', '8.0.7');
+2024-08-07 18:41:04.459 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807131052_InitialDataSeed', '8.0.7');
+2024-08-07 18:41:04.461 +05:30 [DBG] Committing transaction.
+2024-08-07 18:41:04.473 +05:30 [DBG] Committed transaction.
+2024-08-07 18:41:04.474 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:41:04.474 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:41:04.474 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:41:04.476 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:41:04.477 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:41:04.477 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:44:19.037 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:44:19.220 +05:30 [DBG] Hosting starting
+2024-08-07 18:44:19.429 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:44:19.507 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:44:19.508 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:44:19.509 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:44:19.510 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:44:19.511 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:44:19.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:44:19.513 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:44:19.514 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:44:19.515 +05:30 [DBG] Hosting started
+2024-08-07 18:44:19.898 +05:30 [DBG] Connection id "0HN5MSBCFMHM5" accepted.
+2024-08-07 18:44:19.901 +05:30 [DBG] Connection id "0HN5MSBCFMHM5" started.
+2024-08-07 18:44:19.904 +05:30 [DBG] Connection id "0HN5MSBCFMHM6" accepted.
+2024-08-07 18:44:19.906 +05:30 [DBG] Connection id "0HN5MSBCFMHM6" started.
+2024-08-07 18:44:19.924 +05:30 [DBG] Connection id "0HN5MSBCFMHM5" received FIN.
+2024-08-07 18:44:19.951 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:44:19.954 +05:30 [DBG] Connection id "0HN5MSBCFMHM6" received FIN.
+2024-08-07 18:44:20.050 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:44:20.056 +05:30 [DBG] Connection id "0HN5MSBCFMHM5" stopped.
+2024-08-07 18:44:20.057 +05:30 [DBG] Connection id "0HN5MSBCFMHM6" stopped.
+2024-08-07 18:44:20.069 +05:30 [DBG] Connection id "0HN5MSBCFMHM5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:44:20.081 +05:30 [DBG] Connection id "0HN5MSBCFMHM6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:44:20.196 +05:30 [DBG] Connection id "0HN5MSBCFMHM7" accepted.
+2024-08-07 18:44:20.224 +05:30 [DBG] Connection id "0HN5MSBCFMHM7" started.
+2024-08-07 18:44:20.262 +05:30 [DBG] Connection id "0HN5MSBCFMHM7" received FIN.
+2024-08-07 18:44:20.263 +05:30 [DBG] Connection id "0HN5MSBCFMHM8" accepted.
+2024-08-07 18:44:20.265 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:44:20.267 +05:30 [DBG] Connection id "0HN5MSBCFMHM8" started.
+2024-08-07 18:44:20.277 +05:30 [DBG] Connection id "0HN5MSBCFMHM7" stopped.
+2024-08-07 18:44:20.279 +05:30 [DBG] Connection id "0HN5MSBCFMHM7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:44:20.315 +05:30 [DBG] Connection 0HN5MSBCFMHM8 established using the following protocol: "Tls12"
+2024-08-07 18:44:20.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:44:20.544 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:44:20.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 166.1202ms
+2024-08-07 18:44:20.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:44:20.669 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:44:20.676 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:44:20.699 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:44:20.708 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:44:20.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:44:20.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:44:20.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 132.6474ms
+2024-08-07 18:44:20.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:44:20.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:44:20.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:44:20.759 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 33.1783ms
+2024-08-07 18:44:20.765 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:44:20.798 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:44:20.815 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 101.0158ms
+2024-08-07 18:44:20.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 135.9748ms
+2024-08-07 18:44:20.889 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:44:20.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 177.1258ms
+2024-08-07 18:44:20.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 202.635ms
+2024-08-07 18:44:21.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:44:49.221 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:44:49.776 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:44:50.291 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:45:28.464 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:45:28.995 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:45:29.012 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:45:29.024 +05:30 [DBG] Created DbConnection. (8ms).
+2024-08-07 18:45:29.027 +05:30 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.029 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:45:29.031 +05:30 [DBG] Created DbConnection. (2ms).
+2024-08-07 18:45:29.032 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.040 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.043 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.047 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:45:29.056 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:45:29.063 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2024-08-07 18:45:29.065 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (11ms).
+2024-08-07 18:45:29.065 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.067 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.079 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:45:29.096 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:45:29.098 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.100 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (1ms).
+2024-08-07 18:45:29.101 +05:30 [DBG] Creating DbConnection.
+2024-08-07 18:45:29.101 +05:30 [DBG] Created DbConnection. (0ms).
+2024-08-07 18:45:29.101 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.101 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:45:29.102 +05:30 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:45:29.102 +05:30 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-08-07 18:45:29.102 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:45:29.102 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-08-07 18:45:29.102 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.102 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:45:29.115 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.115 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.115 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-08-07 18:45:29.115 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:45:29.115 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-08-07 18:45:29.115 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:45:29.116 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-08-07 18:45:29.118 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.119 +05:30 [DBG] A data reader for 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db' is being disposed after spending 2ms reading results.
+2024-08-07 18:45:29.119 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.119 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:45:29.129 +05:30 [INF] Applying migration '20240807131450_Initial'.
+2024-08-07 18:45:29.163 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.163 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.734 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.734 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.734 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.735 +05:30 [WRN] An operation of type 'UpdateDataOperation' will be attempted while a rebuild of table 'PointOfInterests' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+2024-08-07 18:45:29.769 +05:30 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:29.770 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:29.771 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:45:29.774 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:45:29.775 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:29.775 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.775 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.775 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "PointsOfInterest" RENAME TO "PointOfInterests";
+2024-08-07 18:45:29.776 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "PointsOfInterest" RENAME TO "PointOfInterests";
+2024-08-07 18:45:29.777 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:29.777 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.777 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.777 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_PointsOfInterest_CityId";
+2024-08-07 18:45:29.778 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_PointsOfInterest_CityId";
+2024-08-07 18:45:29.778 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:29.778 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.778 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.778 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2024-08-07 18:45:29.778 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2024-08-07 18:45:29.778 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:29.778 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.778 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.778 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one with big park', "Name" = 'new York city'
+WHERE "Id" = 1;
+SELECT changes();
+2024-08-07 18:45:29.779 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one with big park', "Name" = 'new York city'
+WHERE "Id" = 1;
+SELECT changes();
+2024-08-07 18:45:29.779 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:29.779 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.779 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:29.779 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one with cathedral'
+WHERE "Id" = 2;
+SELECT changes();
+2024-08-07 18:45:31.088 +05:30 [INF] Executed DbCommand (1,309ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one with cathedral'
+WHERE "Id" = 2;
+SELECT changes();
+2024-08-07 18:45:31.089 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.089 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.089 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.089 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one wit eiffle tower', "Name" = 'paris'
+WHERE "Id" = 3;
+SELECT changes();
+2024-08-07 18:45:31.089 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Cities" SET "Description" = 'the one wit eiffle tower', "Name" = 'paris'
+WHERE "Id" = 3;
+SELECT changes();
+2024-08-07 18:45:31.090 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.090 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.090 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.090 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'the most visited urban park', "Name" = 'central park'
+WHERE "Id" = 1;
+SELECT changes();
+2024-08-07 18:45:31.090 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'the most visited urban park', "Name" = 'central park'
+WHERE "Id" = 1;
+SELECT changes();
+2024-08-07 18:45:31.090 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.091 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.091 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.091 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'A 102-story of skyscrapper'
+WHERE "Id" = 2;
+SELECT changes();
+2024-08-07 18:45:31.091 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'A 102-story of skyscrapper'
+WHERE "Id" = 2;
+SELECT changes();
+2024-08-07 18:45:31.091 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.091 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.092 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.092 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'A gothic style cathedral', "Name" = 'cathedral'
+WHERE "Id" = 3;
+SELECT changes();
+2024-08-07 18:45:31.092 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'A gothic style cathedral', "Name" = 'cathedral'
+WHERE "Id" = 3;
+SELECT changes();
+2024-08-07 18:45:31.092 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.092 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.092 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.092 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'The central square of Antwerp', "Name" = 'Grote Markt'
+WHERE "Id" = 4;
+SELECT changes();
+2024-08-07 18:45:31.093 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'The central square of Antwerp', "Name" = 'Grote Markt'
+WHERE "Id" = 4;
+SELECT changes();
+2024-08-07 18:45:31.093 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:31.093 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.093 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:31.093 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'The world''s largest art museum', "Name" = 'Louvre Museum'
+WHERE "Id" = 5;
+SELECT changes();
+2024-08-07 18:45:31.094 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'The world''s largest art museum', "Name" = 'Louvre Museum'
+WHERE "Id" = 5;
+SELECT changes();
+2024-08-07 18:45:31.094 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.124 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (2030ms).
+2024-08-07 18:45:33.124 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2030ms).
+2024-08-07 18:45:33.125 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'Famous Gothic cathedral in Paris', "Name" = 'Notre-Dame Cathedral'
+WHERE "Id" = 6;
+SELECT changes();
+2024-08-07 18:45:33.125 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "PointOfInterests" SET "Description" = 'Famous Gothic cathedral in Paris', "Name" = 'Notre-Dame Cathedral'
+WHERE "Id" = 6;
+SELECT changes();
+2024-08-07 18:45:33.125 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.125 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.125 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.125 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_PointOfInterests" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_PointOfInterests" PRIMARY KEY AUTOINCREMENT,
+    "CityId" INTEGER NOT NULL,
+    "Description" TEXT NULL,
+    "Name" TEXT NOT NULL,
+    CONSTRAINT "FK_PointOfInterests_Cities_CityId" FOREIGN KEY ("CityId") REFERENCES "Cities" ("Id") ON DELETE CASCADE
+);
+2024-08-07 18:45:33.126 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_PointOfInterests" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_PointOfInterests" PRIMARY KEY AUTOINCREMENT,
+    "CityId" INTEGER NOT NULL,
+    "Description" TEXT NULL,
+    "Name" TEXT NOT NULL,
+    CONSTRAINT "FK_PointOfInterests_Cities_CityId" FOREIGN KEY ("CityId") REFERENCES "Cities" ("Id") ON DELETE CASCADE
+);
+2024-08-07 18:45:33.126 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.126 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.126 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.126 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_PointOfInterests" ("Id", "CityId", "Description", "Name")
+SELECT "Id", "CityId", "Description", "Name"
+FROM "PointOfInterests";
+2024-08-07 18:45:33.127 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_PointOfInterests" ("Id", "CityId", "Description", "Name")
+SELECT "Id", "CityId", "Description", "Name"
+FROM "PointOfInterests";
+2024-08-07 18:45:33.130 +05:30 [DBG] Committing transaction.
+2024-08-07 18:45:33.165 +05:30 [DBG] Committed transaction.
+2024-08-07 18:45:33.167 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:45:33.167 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.167 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.167 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.167 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 0;
+2024-08-07 18:45:33.167 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 0;
+2024-08-07 18:45:33.168 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:45:33.168 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:45:33.168 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.168 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.168 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.168 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "PointOfInterests";
+2024-08-07 18:45:33.169 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "PointOfInterests";
+2024-08-07 18:45:33.169 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:33.169 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.169 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:33.169 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "ef_temp_PointOfInterests" RENAME TO "PointOfInterests";
+2024-08-07 18:45:33.170 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "ef_temp_PointOfInterests" RENAME TO "PointOfInterests";
+2024-08-07 18:45:33.170 +05:30 [DBG] Committing transaction.
+2024-08-07 18:45:36.007 +05:30 [DBG] Committed transaction.
+2024-08-07 18:45:36.008 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:45:36.008 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:36.008 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:36.008 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:36.008 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 1;
+2024-08-07 18:45:36.008 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 1;
+2024-08-07 18:45:36.009 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-08-07 18:45:36.009 +05:30 [DBG] Began transaction with isolation level 'Serializable'.
+2024-08-07 18:45:36.009 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:36.010 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2024-08-07 18:45:36.010 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-08-07 18:45:36.010 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2024-08-07 18:45:36.011 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2024-08-07 18:45:36.011 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-08-07 18:45:36.011 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:36.011 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-08-07 18:45:36.011 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807131450_Initial', '8.0.7');
+2024-08-07 18:45:36.011 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240807131450_Initial', '8.0.7');
+2024-08-07 18:45:36.012 +05:30 [DBG] Committing transaction.
+2024-08-07 18:45:36.025 +05:30 [DBG] Committed transaction.
+2024-08-07 18:45:36.025 +05:30 [DBG] Disposing transaction.
+2024-08-07 18:45:36.025 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API\CityInfo.db'.
+2024-08-07 18:45:36.025 +05:30 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:45:36.030 +05:30 [DBG] 'CityInfoContext' disposed.
+2024-08-07 18:45:36.032 +05:30 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2024-08-07 18:45:36.032 +05:30 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2024-08-07 18:46:09.044 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:46:09.139 +05:30 [DBG] Hosting starting
+2024-08-07 18:46:09.204 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:46:09.229 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:46:09.231 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:46:09.233 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:46:09.234 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:46:09.235 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:46:09.236 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:46:09.238 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:46:09.239 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:46:09.240 +05:30 [DBG] Hosting started
+2024-08-07 18:46:09.598 +05:30 [DBG] Connection id "0HN5MSCD5SDBE" accepted.
+2024-08-07 18:46:09.599 +05:30 [DBG] Connection id "0HN5MSCD5SDBD" accepted.
+2024-08-07 18:46:09.606 +05:30 [DBG] Connection id "0HN5MSCD5SDBE" started.
+2024-08-07 18:46:09.606 +05:30 [DBG] Connection id "0HN5MSCD5SDBD" started.
+2024-08-07 18:46:09.617 +05:30 [DBG] Connection id "0HN5MSCD5SDBD" received FIN.
+2024-08-07 18:46:09.617 +05:30 [DBG] Connection id "0HN5MSCD5SDBE" received FIN.
+2024-08-07 18:46:09.642 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:46:09.642 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:46:09.666 +05:30 [DBG] Connection id "0HN5MSCD5SDBE" stopped.
+2024-08-07 18:46:09.666 +05:30 [DBG] Connection id "0HN5MSCD5SDBD" stopped.
+2024-08-07 18:46:09.672 +05:30 [DBG] Connection id "0HN5MSCD5SDBE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:46:09.672 +05:30 [DBG] Connection id "0HN5MSCD5SDBD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:46:09.765 +05:30 [DBG] Connection id "0HN5MSCD5SDBF" accepted.
+2024-08-07 18:46:09.774 +05:30 [DBG] Connection id "0HN5MSCD5SDBF" started.
+2024-08-07 18:46:09.812 +05:30 [DBG] Connection id "0HN5MSCD5SDBF" received FIN.
+2024-08-07 18:46:09.812 +05:30 [DBG] Connection id "0HN5MSCD5SDBG" accepted.
+2024-08-07 18:46:09.812 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:46:09.815 +05:30 [DBG] Connection id "0HN5MSCD5SDBG" started.
+2024-08-07 18:46:09.824 +05:30 [DBG] Connection id "0HN5MSCD5SDBF" stopped.
+2024-08-07 18:46:09.826 +05:30 [DBG] Connection id "0HN5MSCD5SDBF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:46:09.830 +05:30 [DBG] Connection id "0HN5MSCD5SDBG" received FIN.
+2024-08-07 18:46:09.831 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:46:09.831 +05:30 [DBG] Connection id "0HN5MSCD5SDBH" accepted.
+2024-08-07 18:46:09.840 +05:30 [DBG] Connection id "0HN5MSCD5SDBH" started.
+2024-08-07 18:46:09.840 +05:30 [DBG] Connection id "0HN5MSCD5SDBG" stopped.
+2024-08-07 18:46:09.845 +05:30 [DBG] Connection id "0HN5MSCD5SDBG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:46:09.866 +05:30 [DBG] Connection 0HN5MSCD5SDBH established using the following protocol: "Tls12"
+2024-08-07 18:46:09.938 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:46:10.011 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:46:10.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 92.3127ms
+2024-08-07 18:46:10.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:46:10.104 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:46:10.106 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:46:10.144 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:46:10.160 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:46:10.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:46:10.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:46:10.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 137.2393ms
+2024-08-07 18:46:10.174 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:46:10.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:46:10.258 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:46:10.266 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:46:10.267 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 98.8006ms
+2024-08-07 18:46:10.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 16.6569ms
+2024-08-07 18:46:10.310 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:46:10.321 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:46:10.360 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 185.8068ms
+2024-08-07 18:46:10.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.4105ms
+2024-08-07 18:46:10.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 207.2945ms
+2024-08-07 18:46:10.607 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:46:10.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 182.0165ms
+2024-08-07 18:47:01.452 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:47:01.545 +05:30 [DBG] Hosting starting
+2024-08-07 18:47:01.613 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:47:01.638 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:47:01.640 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:47:01.641 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:47:01.643 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:47:01.644 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:47:01.646 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:47:01.647 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:47:01.648 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:47:01.649 +05:30 [DBG] Hosting started
+2024-08-07 18:47:02.022 +05:30 [DBG] Connection id "0HN5MSCSPQSIH" accepted.
+2024-08-07 18:47:02.022 +05:30 [DBG] Connection id "0HN5MSCSPQSII" accepted.
+2024-08-07 18:47:02.029 +05:30 [DBG] Connection id "0HN5MSCSPQSIH" started.
+2024-08-07 18:47:02.031 +05:30 [DBG] Connection id "0HN5MSCSPQSII" started.
+2024-08-07 18:47:02.053 +05:30 [DBG] Connection id "0HN5MSCSPQSIH" received FIN.
+2024-08-07 18:47:02.054 +05:30 [DBG] Connection id "0HN5MSCSPQSII" received FIN.
+2024-08-07 18:47:02.064 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:47:02.064 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:47:02.087 +05:30 [DBG] Connection id "0HN5MSCSPQSIH" stopped.
+2024-08-07 18:47:02.087 +05:30 [DBG] Connection id "0HN5MSCSPQSII" stopped.
+2024-08-07 18:47:02.094 +05:30 [DBG] Connection id "0HN5MSCSPQSII" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:47:02.094 +05:30 [DBG] Connection id "0HN5MSCSPQSIH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:47:02.172 +05:30 [DBG] Connection id "0HN5MSCSPQSIJ" accepted.
+2024-08-07 18:47:02.182 +05:30 [DBG] Connection id "0HN5MSCSPQSIJ" started.
+2024-08-07 18:47:02.213 +05:30 [DBG] Connection id "0HN5MSCSPQSIJ" received FIN.
+2024-08-07 18:47:02.214 +05:30 [DBG] Connection id "0HN5MSCSPQSIK" accepted.
+2024-08-07 18:47:02.215 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:47:02.217 +05:30 [DBG] Connection id "0HN5MSCSPQSIK" started.
+2024-08-07 18:47:02.223 +05:30 [DBG] Connection id "0HN5MSCSPQSIJ" stopped.
+2024-08-07 18:47:02.225 +05:30 [DBG] Connection id "0HN5MSCSPQSIJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:47:02.228 +05:30 [DBG] Connection id "0HN5MSCSPQSIK" received FIN.
+2024-08-07 18:47:02.228 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:47:02.229 +05:30 [DBG] Connection id "0HN5MSCSPQSIL" accepted.
+2024-08-07 18:47:02.238 +05:30 [DBG] Connection id "0HN5MSCSPQSIK" stopped.
+2024-08-07 18:47:02.239 +05:30 [DBG] Connection id "0HN5MSCSPQSIL" started.
+2024-08-07 18:47:02.241 +05:30 [DBG] Connection id "0HN5MSCSPQSIK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:47:02.263 +05:30 [DBG] Connection 0HN5MSCSPQSIL established using the following protocol: "Tls12"
+2024-08-07 18:47:02.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2024-08-07 18:47:02.392 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:47:02.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 89.6443ms
+2024-08-07 18:47:02.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:47:02.484 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:47:02.486 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:47:02.507 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:47:02.509 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:47:02.510 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 97.9001ms
+2024-08-07 18:47:02.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2024-08-07 18:47:02.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2024-08-07 18:47:02.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-07 18:47:02.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:47:02.540 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 22.8534ms
+2024-08-07 18:47:02.549 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-07 18:47:02.551 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:47:02.551 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-07 18:47:02.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 57.5666ms
+2024-08-07 18:47:02.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 143943 text/css 45.4026ms
+2024-08-07 18:47:02.583 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-07 18:47:02.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 74.2878ms
+2024-08-07 18:47:02.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.4585ms
+2024-08-07 18:47:02.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:47:03.102 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.4407ms
+2024-08-07 18:47:57.200 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:47:57.917 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:47:58.625 +05:30 [DBG] 'CityInfoContext' disposed.

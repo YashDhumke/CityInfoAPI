@@ -1,0 +1,55 @@
+2024-08-07 18:04:04.916 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-08-07 18:04:05.031 +05:30 [DBG] Hosting starting
+2024-08-07 18:04:05.121 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-08-07 18:04:05.149 +05:30 [INF] Now listening on: https://localhost:7221
+2024-08-07 18:04:05.151 +05:30 [INF] Now listening on: http://localhost:5036
+2024-08-07 18:04:05.152 +05:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-08-07 18:04:05.153 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-08-07 18:04:05.154 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-08-07 18:04:05.155 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 18:04:05.156 +05:30 [INF] Hosting environment: Development
+2024-08-07 18:04:05.157 +05:30 [INF] Content root path: C:\Users\parag.bhasme\source\repos\CityInfo.API\CityInfo.API
+2024-08-07 18:04:05.158 +05:30 [DBG] Hosting started
+2024-08-07 18:04:05.297 +05:30 [DBG] Connection id "0HN5MRKSS8QDO" received FIN.
+2024-08-07 18:04:05.305 +05:30 [DBG] Connection id "0HN5MRKSS8QDO" accepted.
+2024-08-07 18:04:05.309 +05:30 [DBG] Connection id "0HN5MRKSS8QDO" started.
+2024-08-07 18:04:05.311 +05:30 [DBG] Connection id "0HN5MRKSS8QDP" accepted.
+2024-08-07 18:04:05.312 +05:30 [DBG] Connection id "0HN5MRKSS8QDP" started.
+2024-08-07 18:04:05.325 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:04:05.353 +05:30 [DBG] Connection id "0HN5MRKSS8QDO" stopped.
+2024-08-07 18:04:05.359 +05:30 [DBG] Connection id "0HN5MRKSS8QDP" received FIN.
+2024-08-07 18:04:05.359 +05:30 [DBG] Connection id "0HN5MRKSS8QDQ" accepted.
+2024-08-07 18:04:05.364 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-08-07 18:04:05.365 +05:30 [DBG] Connection id "0HN5MRKSS8QDQ" started.
+2024-08-07 18:04:05.372 +05:30 [DBG] Connection id "0HN5MRKSS8QDP" stopped.
+2024-08-07 18:04:05.374 +05:30 [DBG] Connection id "0HN5MRKSS8QDO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:04:05.375 +05:30 [DBG] Connection id "0HN5MRKSS8QDP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-08-07 18:04:05.390 +05:30 [DBG] Connection 0HN5MRKSS8QDQ established using the following protocol: "Tls12"
+2024-08-07 18:04:05.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2024-08-07 18:04:05.638 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-08-07 18:04:05.761 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-08-07 18:04:05.764 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-08-07 18:04:05.791 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-08-07 18:04:05.793 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-08-07 18:04:05.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 345.8375ms
+2024-08-07 18:04:05.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2024-08-07 18:04:05.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 18:04:05.845 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 20.9217ms
+2024-08-07 18:04:05.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.3384ms
+2024-08-07 18:04:05.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2024-08-07 18:04:05.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - null null
+2024-08-07 18:04:05.979 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-07 18:04:05.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - 200 628 image/png 15.9648ms
+2024-08-07 18:04:06.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 170.5929ms
+2024-08-07 18:04:12.015 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-08-07 18:04:12.810 +05:30 [DBG] Entity Framework Core 8.0.7 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.7' with options: None
+2024-08-07 18:04:13.732 +05:30 [DBG] 'CityInfoContext' disposed.

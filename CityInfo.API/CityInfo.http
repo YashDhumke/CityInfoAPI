@@ -1,0 +1,43 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@schema=http
+@hostname=localhost
+@port=5036
+
+
+POST {{schema}}://{{hostname}}:{{port}}/api/authentication/authenticate
+Content-Type:application/json
+{
+  "username":"yash",
+  "password":"hey"
+}
+
+
+### 
+GET {{schema}}://{{hostname}}:{{port}}/api/v2/cities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IktldmluIiwiZmFtaWx5X25hbWUiOiJEb2NreCIsImNpdHkiOiJBbnR3ZXJwIiwibmJmIjoxNzIzNzgzOTMwLCJleHAiOjE3MjM3ODc1MzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMzYiLCJhdWQiOiJjaXR5aW5mb2FwaSJ9.c93KmkZ19D84dNomd9vSo8_4qG0-d2bd6iJ_Vm4G95M
+
+
+###
+GET {{schema}}://{{hostname}}:{{port}}/api/v2/cities
+Accept:application/xml
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IktldmluIiwiZmFtaWx5X25hbWUiOiJEb2NreCIsImNpdHkiOiJBbnR3ZXJwIiwibmJmIjoxNzIzNzgzOTMwLCJleHAiOjE3MjM3ODc1MzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMzYiLCJhdWQiOiJjaXR5aW5mb2FwaSJ9.c93KmkZ19D84dNomd9vSo8_4qG0-d2bd6iJ_Vm4G95M
+
+
+###
+POST {{schema}}://{{hostname}}:{{port}}/api/v2/cities/1/pointsofinterest
+Accept:application/json
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IktldmluIiwiZmFtaWx5X25hbWUiOiJEb2NreCIsImNpdHkiOiJBbnR3ZXJwIiwibmJmIjoxNzIzNzgzOTMwLCJleHAiOjE3MjM3ODc1MzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMzYiLCJhdWQiOiJjaXR5aW5mb2FwaSJ9.c93KmkZ19D84dNomd9vSo8_4qG0-d2bd6iJ_Vm4G95M
+{
+  "name":"the old village",
+  "description":"the description for old village"
+}
+
+###
+@poiid = {{createpoi.response.body.id}}
+
+GET {{schema}}://{{hostname}}:{{port}}/api/v2/cities/1/pointsofinterest/{{poiid}
+Accept:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IktldmluIiwiZmFtaWx5X25hbWUiOiJEb2NreCIsImNpdHkiOiJBbnR3ZXJwIiwibmJmIjoxNzIzNzg0MTYwLCJleHAiOjE3MjM3ODc3NjAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMzYiLCJhdWQiOiJjaXR5aW5mb2FwaSJ9.KkqfIC_5qgahYfBaTXNGypvaxX61QSA7lWJ9EdmNXb0
+
+
