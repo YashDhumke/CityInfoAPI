@@ -1,4 +1,4 @@
-### CityInfoAPI
+# CityInfoAPI
 CityInfoAPI is a RESTful API built with .NET Web API and SQLite that provides detailed information about cities. This project is designed to offer a reliable backend service for retrieving city-related data, making it ideal for integration into applications requiring city information.
 
 # Features
